@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Research Awareness Among Undergraduate Health Profession Students</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f7f8fa; /* Slightly lighter gray */
+        }
+        .prose {
+            max-width: 80ch;
+        }
+        .chart-container {
+            position: relative;
+            margin: auto;
+            height: 300px; /* Fixed height for consistency */
+            width: 100%;
+        }
+        .nav-link {
+            transition: all 0.3s ease;
+            border-left: 3px solid transparent;
+        }
+        .nav-link.active {
+            background-color: #eef2ff; /* Lighter indigo for active state */
+            color: #3730a3; /* Darker indigo for text */
+            border-left-color: #4f46e5;
+        }
+        .nav-link:hover {
+            background-color: #f7f8fa;
+        }
+        /* Custom scrollbar for a cleaner look */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #d1d5db;
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #9ca3af;
+        }
+    </style>
+</head>
+<body class="text-slate-800">
+
+    <div class="flex h-screen bg-gray-50">
+        <!-- Sidebar Navigation -->
+        <aside class="w-64 flex-shrink-0 bg-white border-r border-gray-200 flex flex-col">
+            <div class="h-16 flex items-center justify-center border-b border-gray-200">
+                <h2 class="text-xl font-bold text-indigo-700">Research Portal</h2>
+            </div>
+            <nav class="flex-1 px-4 py-6 space-y-2">
+                <a href="#" id="paperBtn" class="nav-link active flex items-center px-4 py-2 text-gray-700 rounded-md">
+                    <svg class="w-5 h-5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
+                    Research Paper
+                </a>
+                <a href="#" id="dashboardBtn" class="nav-link flex items-center px-4 py-2 text-gray-700 rounded-md">
+                    <svg class="w-5 h-5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path></svg>
+                    Dashboard
+                </a>
+            </nav>
+            <div class="p-4 border-t border-gray-200 text-xs text-gray-500">
+                <p>&copy; 2025 Luqman Bin Fahad et al.</p>
+                <p>Vaageswari College of Pharmacy</p>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <div class="flex-1 flex flex-col overflow-hidden">
+            <header class="bg-white border-b border-gray-200">
+                <div class="px-6 py-4">
+                    <h1 class="text-2xl font-semibold text-gray-800">Research Awareness Among Undergraduate Health Profession Students</h1>
+                </div>
+            </header>
+            
+            <main class="flex-1 overflow-x-hidden overflow-y-auto bg-gray-100 p-6">
+                <!-- Paper Content -->
+                <div id="paperContent">
+                    <article class="prose lg:prose-xl mx-auto bg-white p-8 rounded-lg shadow-sm border border-gray-200">
+                        <section class="mb-8">
+                            <h2 class="text-2xl font-semibold mb-4 text-gray-900">Abstract</h2>
+                            <p><strong>Background:</strong> Research promotes critical thinking and evidence-based practice among health profession students, but awareness and participation in India are understudied, with limited focus on barriers.</p>
+                            <p><strong>Objective:</strong> To evaluate research awareness, participation, and barriers among undergraduate health profession students in India, highlighting discipline-specific differences.</p>
+                            <p><strong>Methods:</strong> A cross-sectional survey was conducted with 508 students (MBBS, Pharm-D, B-Pharmacy, BSc Nursing) at Chalmeda Anand Rao Hospital and Vaageswari College of Pharmacy, Karimnagar, India, using a validated questionnaire. The sample was 50% male, with a mean age of 22.3 years. Data were analyzed in SPSS (v.26) using descriptive statistics and chi-square tests.</p>
+                            <p><strong>Results:</strong> Most participants (84.8%) recognized research types, but only 36.4% were familiar with data analysis tools. Research participation was low: 20.3% conducted studies, and 9.1% published. Key barriers included inadequate training (92.9%), funding shortages (80.7%), and limited institutional support (19.3%). MBBS and Pharm-D students demonstrated higher awareness than B-Pharmacy and BSc Nursing peers (p < 0.01). While 88.6% valued research’s role in advancing medical knowledge, only 44.3% felt motivated to engage.</p>
+                            <p><strong>Conclusion:</strong> The gap between research awareness and participation underscores the need for structured training, mentorship, and funding in Indian undergraduate health profession curricula to foster a research-oriented mindset.</p>
+                        </section>
+
+                        <section class="mb-8">
+                            <h2 class="text-2xl font-semibold mb-4 text-gray-900">Introduction</h2>
+                            <p>Research underpins healthcare innovation, enabling evidence-based practice and improved patient outcomes through systematic inquiry. For health profession students, engaging in research cultivates critical thinking, enhances clinical decision-making, and prepares them to address complex health challenges. In India, where communicable and non-communicable diseases strain a diverse population, research is critical for tailoring interventions and informing policy. Regulatory bodies like the Indian Council of Medical Research (ICMR) and Good Clinical Practice (GCP) guidelines ensure ethical, impactful research.</p>
+                        </section>
+
+                        <section class="mb-8">
+                            <h2 class="text-2xl font-semibold mb-4 text-gray-900">Methods</h2>
+                             <p>A cross-sectional survey was conducted from October 2024 to March 2025 at Chalmeda Anand Rao Institute of Medical Sciences and Vaageswari College of Pharmacy, Karimnagar, Telangana. We enrolled 508 undergraduate students: MBBS (n=214), Pharm-D (n=160), B-Pharmacy (n=65), and BSc Nursing (n=69). A 30-item questionnaire was developed and pilot-tested (Cronbach’s alpha = 0.82). Following ethical approval, data were collected via Google Forms and analyzed using descriptive statistics and chi-square tests in SPSS (v.26).</p>
+                        </section>
+
+                        <section class="mb-8">
+                            <h2 class="text-2xl font-semibold mb-4 text-gray-900">Results</h2>
+                            <p>Participants (n=508) were 50% male and 50% female, aged 18-29 (mean 22.3, SD 2.1). MBBS students comprised 42.1%, Pharm-D 31.5%, BSc Nursing 13.6%, and B-Pharmacy 12.8%. Overall, 84.8% recognized research types, but only 36.4% were familiar with data analysis software. Only 20.3% had conducted research, and 9.1% had published. Key barriers included inadequate training (92.9%), funding shortages (80.7%), and study burden (94.1%). Most students (88.6%) valued research’s role in medical knowledge, but only 44.3% felt motivated to conduct it.</p>
+                        </section>
+                        
+                        <section class="mb-8">
+                            <h2 class="text-2xl font-semibold mb-4 text-gray-900">Discussion</h2>
+                            <p>This study reveals a stark contrast between research awareness and participation among undergraduate health profession students. While 84.8% recognized research types, only 20.3% conducted research. Participation lags due to systemic barriers: inadequate training (92.9%), funding shortages (80.7%), and poor institutional support (19.3%). Despite low participation, students recognize research’s value (88.6%) and support curriculum integration (76.8%). To bridge this gap, institutions must integrate mandatory research training, establish mentorship programs, and secure funding.</p>
+                        </section>
+
+                        <section>
+                            <h2 class="text-2xl font-semibold mb-4 text-gray-900">Conclusion</h2>
+                            <p>Undergraduate health profession students exhibit high research awareness but low participation, driven by training, funding, and support deficits. Structured research education, aligned with ICMR and GCP guidelines, is essential to foster inquiry, enhance patient care, and address India’s health challenges.</p>
+                        </section>
+                    </article>
+                </div>
+
+                <!-- Dashboard Content -->
+                <div id="dashboardContent" class="hidden">
+                    <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
+                        <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
+                            <h3 class="text-lg font-semibold text-center mb-4 text-gray-700">Participant Demographics: Age</h3>
+                            <div class="chart-container">
+                                <canvas id="ageChart"></canvas>
+                            </div>
+                        </div>
+                        <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
+                            <h3 class="text-lg font-semibold text-center mb-4 text-gray-700">Participant Demographics: Gender</h3>
+                            <div class="chart-container">
+                                <canvas id="genderChart"></canvas>
+                            </div>
+                        </div>
+                        <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
+                            <h3 class="text-lg font-semibold text-center mb-4 text-gray-700">Participant Demographics: Course</h3>
+                            <div class="chart-container">
+                                <canvas id="courseChart"></canvas>
+                            </div>
+                        </div>
+                        <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
+                            <h3 class="text-lg font-semibold text-center mb-4 text-gray-700">Familiarity with Research Types</h3>
+                            <div class="chart-container">
+                                <canvas id="researchTypesChart"></canvas>
+                            </div>
+                        </div>
+                        <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
+                            <h3 class="text-lg font-semibold text-center mb-4 text-gray-700">Familiarity with Research Protocol</h3>
+                            <div class="chart-container">
+                                <canvas id="researchProtocolChart"></canvas>
+                            </div>
+                        </div>
+                         <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
+                            <h3 class="text-lg font-semibold text-center mb-4 text-gray-700">Familiarity with Data Interpretation Tools</h3>
+                            <div class="chart-container">
+                                <canvas id="dataToolsChart"></canvas>
+                            </div>
+                        </div>
+                        <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
+                            <h3 class="text-lg font-semibold text-center mb-4 text-gray-700">Research Participation: Conducted Research</h3>
+                            <div class="chart-container">
+                                <canvas id="conductedResearchChart"></canvas>
+                            </div>
+                        </div>
+                         <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
+                            <h3 class="text-lg font-semibold text-center mb-4 text-gray-700">Barriers: Lack of Adequate Training</h3>
+                            <div class="chart-container">
+                                <canvas id="trainingBarrierChart"></canvas>
+                            </div>
+                        </div>
+                         <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
+                            <h3 class="text-lg font-semibold text-center mb-4 text-gray-700">Barriers: Inadequate Funding</h3>
+                            <div class="chart-container">
+                                <canvas id="fundingBarrierChart"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <script>
+        const paperBtn = document.getElementById('paperBtn');
+        const dashboardBtn = document.getElementById('dashboardBtn');
+        const paperContent = document.getElementById('paperContent');
+        const dashboardContent = document.getElementById('dashboardContent');
+
+        function switchView(view) {
+            if (view === 'paper') {
+                paperContent.classList.remove('hidden');
+                dashboardContent.classList.add('hidden');
+                paperBtn.classList.add('active');
+                dashboardBtn.classList.remove('active');
+            } else {
+                paperContent.classList.add('hidden');
+                dashboardContent.classList.remove('hidden');
+                paperBtn.classList.remove('active');
+                dashboardBtn.classList.add('active');
+            }
+        }
+
+        paperBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            switchView('paper');
+        });
+
+        dashboardBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            switchView('dashboard');
+        });
+        
+        // Professional Chart Colors
+        const chartColors = {
+            blue: 'rgba(59, 130, 246, 0.7)',
+            red: 'rgba(239, 68, 68, 0.7)',
+            green: 'rgba(16, 185, 129, 0.7)',
+            yellow: 'rgba(245, 158, 11, 0.7)',
+            purple: 'rgba(139, 92, 246, 0.7)',
+            teal: 'rgba(20, 184, 166, 0.7)',
+            orange: 'rgba(249, 115, 22, 0.7)',
+            pink: 'rgba(236, 72, 153, 0.7)',
+        };
+        const chartColorsHover = {
+            blue: 'rgba(59, 130, 246, 1)',
+            red: 'rgba(239, 68, 68, 1)',
+            green: 'rgba(16, 185, 129, 1)',
+            yellow: 'rgba(245, 158, 11, 1)',
+            purple: 'rgba(139, 92, 246, 1)',
+            teal: 'rgba(20, 184, 166, 1)',
+            orange: 'rgba(249, 115, 22, 1)',
+            pink: 'rgba(236, 72, 153, 1)',
+        };
+
+        // Chart Data
+        const ageData = {
+            labels: ['18-19', '20-21', '22-23', '24-25', '26-27', '28-29'],
+            datasets: [{
+                label: 'Number of Students',
+                data: [8, 113, 267, 115, 4, 1],
+                backgroundColor: [chartColors.blue, chartColors.green, chartColors.purple, chartColors.yellow, chartColors.teal, chartColors.orange],
+                borderColor: '#fff',
+                borderWidth: 1
+            }]
+        };
+
+        const genderData = {
+            labels: ['Female', 'Male'],
+            datasets: [{
+                data: [254, 254],
+                backgroundColor: [chartColors.pink, chartColors.blue],
+                hoverBackgroundColor: [chartColorsHover.pink, chartColorsHover.blue]
+            }]
+        };
+
+        const courseData = {
+            labels: ['MBBS', 'Pharm-D', 'B-Pharmacy', 'BSc.Nursing'],
+            datasets: [{
+                data: [214, 160, 65, 69],
+                backgroundColor: [chartColors.purple, chartColors.blue, chartColors.yellow, chartColors.green],
+                 hoverBackgroundColor: [chartColorsHover.purple, chartColorsHover.blue, chartColorsHover.yellow, chartColorsHover.green]
+            }]
+        };
+
+        const yesNoData = (yes, no, colors = [chartColors.green, chartColors.red], hoverColors = [chartColorsHover.green, chartColorsHover.red]) => ({
+            labels: ['Yes', 'No'],
+            datasets: [{
+                data: [yes, no],
+                backgroundColor: colors,
+                hoverBackgroundColor: hoverColors,
+                borderColor: '#fff',
+                borderWidth: 2
+            }]
+        });
+
+        // Chart Rendering
+        const chartOptions = (title) => ({
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: {
+                legend: {
+                    position: 'bottom',
+                    labels: {
+                        boxWidth: 12,
+                        padding: 20,
+                        font: {
+                            family: "'Inter', sans-serif"
+                        }
+                    }
+                },
+                title: {
+                    display: false, // Title is in the card header
+                    text: title
+                },
+                tooltip: {
+                    backgroundColor: '#1e293b',
+                    titleFont: { size: 14, family: "'Inter', sans-serif" },
+                    bodyFont: { size: 12, family: "'Inter', sans-serif" },
+                    padding: 10,
+                    cornerRadius: 4,
+                    displayColors: true,
+                    boxPadding: 4
+                }
+            },
+            animation: {
+                duration: 1000,
+                easing: 'easeInOutQuart'
+            }
+        });
+        
+        new Chart(document.getElementById('ageChart'), { type: 'bar', data: ageData, options: chartOptions('Participant Demographics: Age') });
+        new Chart(document.getElementById('genderChart'), { type: 'pie', data: genderData, options: chartOptions('Participant Demographics: Gender') });
+        new Chart(document.getElementById('courseChart'), { type: 'doughnut', data: courseData, options: chartOptions('Participant Demographics: Course') });
+        new Chart(document.getElementById('researchTypesChart'), { type: 'pie', data: yesNoData(431, 77), options: chartOptions('Familiarity with Research Types') });
+        new Chart(document.getElementById('researchProtocolChart'), { type: 'pie', data: yesNoData(385, 123), options: chartOptions('Familiarity with Research Protocol') });
+        new Chart(document.getElementById('dataToolsChart'), { type: 'pie', data: yesNoData(168, 340), options: chartOptions('Familiarity with Data Interpretation Tools') });
+        new Chart(document.getElementById('conductedResearchChart'), { type: 'doughnut', data: yesNoData(103, 405), options: chartOptions('Research Participation: Conducted Research') });
+        new Chart(document.getElementById('trainingBarrierChart'), { type: 'doughnut', data: yesNoData(472, 36, [chartColors.red, chartColors.green], [chartColorsHover.red, chartColorsHover.green]), options: chartOptions('Barriers: Lack of Adequate Training') });
+        new Chart(document.getElementById('fundingBarrierChart'), { type: 'doughnut', data: yesNoData(410, 98, [chartColors.red, chartColors.green], [chartColorsHover.red, chartColorsHover.green]), options: chartOptions('Barriers: Inadequate Funding') });
+
+    </script>
+</body>
+</html>
